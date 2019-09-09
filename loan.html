@@ -1,0 +1,48 @@
+<html>
+    <head>
+ <link rel="stylesheet" type="text/css" href="loan.css">
+            
+        <title>
+
+        </title>
+    </head>
+    <body>
+            <div class = "one">
+<h4><b>Enter Loan Data: </b></h4>
+<label for = "loan">Amount of the Loan ($):</label>
+<input type="text" id="amount" name="amount" onchange="calculateLoan();"><br><br>
+<label for = "interest">Annual interest (%):</label>
+<input type="text" id="interest" name="interest" onchange="calculateLoan();"><br><br>
+<label for = "repay">Repayment period (years):</label>
+<input type="text" id="repay" name="repay" onchange="calculateLoan();"><br><br>
+<label for = "zip">Zipcode (to find lenders):</label>
+<input type="text" id="zip" name="zip" onchange="calculateLoan();">
+<p><b>Approximate Payments: </b></p>
+<div class = "calc">
+<input type="submit" value="Calculate" onclick="calculateLoan()">
+</div>
+<span>Monthly Payment: </span>
+$<span id="mp" class="result"></span><br>
+<span>Total Payment: </span>
+$<span id="tp" class="result"></span><br>
+<span>Total Interest: </span>
+$<span id="ti" class="result"></span>
+
+            </div>
+
+            
+<div class="three">
+<p><b>Sponsors:</b>Apply for your loan with one of these fine lenders: </p>
+<ul>
+    <li><a href=" " > Bank of JavaScript </a></li>
+    <li><a href=" "> HTML Credit Union </a></li>
+</ul>
+</div>
+
+            <div class = "two">
+                <p><b>Loan Balance, Cumulative Equity, and Interest Payments </b></p>
+                <img src="loan.PNG" >
+            </div>
+            <script src="loan.js"></script>
+    </body>
+</html>
